@@ -1,0 +1,106 @@
+ #page-create-point {
+     width: 90%;
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+
+ #page-create-point header {
+     margin-top: 48px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ #page-create-point header a {
+   color: var(--title-color);
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+}
+
+#page-create-point header a span {
+    display: flex;
+    margin-right: 12px;
+    background-image: url(/icones/arrow-left.svg);
+    width: 20px;
+    height: 26px;
+ }
+
+ form {
+     background: white;
+     margin: 80px auto;
+     padding: 64px;
+     margin-top: 80px;
+     border-radius: 8px;
+     max-width: 730px;
+     
+ }
+
+ form h1 {
+     font-size: 36px;
+ }
+
+ form fieldset {
+     margin-top: 64px;
+     border: 0;
+ }
+
+ form legend {
+     margin-bottom: 40px;
+ }
+
+ form legend h2 {
+     font-size: 24px;
+ }
+
+ form .field {
+     flex: 1; /*os elementos vão preecher o espaço flex, ou seja, esticarem na área flex;*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    /* outline: none; para saber em qual campo você está (tirar linha preta de seleção*/
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none; /*tira a setinha, caracteristicas do browser que possa interferir na leitura do css*/
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field{ /*aplicou somente no segundo field*/
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms; /*aplica transição só no back*/
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}

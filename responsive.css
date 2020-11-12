@@ -1,0 +1,45 @@
+@media (max-width: 900px) { /*até 900 px, aplica-se essas regras*/
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align:center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+} 
+
+@media (min-width: 1010px) { /*de 1170 para lá, aplica-se essas regras*/
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+@media (max-height: 710px) {
+    #page-home{
+        height: 120vh;
+    }
+    #page-home header a {
+        position: absolute;
+            top: 110vh;
+            left: 50%;
+            transform: translateX(-50%);
+    }  
+}
